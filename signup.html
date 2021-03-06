@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="#" />
+</head>
+
+<body>
+  <div>
+
+  <!--Simple form for sign up data-->
+  <!--change action_page.php to desired php script-->
+  <form action="connect.php" method = "POST">
+    <!--collect full name-->
+    <label for="fullname">Full Name</label> <br>
+    <input type="text" placeholder="Enter Name" id="fullname" name="fullname" required> <br>
+    
+    <!--collect user email-->
+    <!--users email is the username-->
+    <label for="email">Email</label> <br>
+    <input type="text" placeholder="Enter Email" id="email" name="email" required>
+    <br>
+    <!--collect user psw-->
+    <label for="psw">Password</label> <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <!--repeat psw-->
+    <label for="psw-repeat">Repeat Password</label> <br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <!--two br for spacing-->
+    <br>
+    <br>
+    <!--submit btn-->
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+</body>
+</html>
