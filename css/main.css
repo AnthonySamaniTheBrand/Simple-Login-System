@@ -1,0 +1,11 @@
+.main-page-container {
+    text-align: center;
+}
+.signup-form {
+    background-color:rgb(0,0,0, 0.4) ;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 650px;
+    text-align: left;
+    
+}

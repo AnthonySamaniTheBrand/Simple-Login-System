@@ -2,41 +2,52 @@
 <html lang="en">
 
 <head>
-  <title>Sign Up</title>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="#" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div>
-
-  <!--Simple form for sign up data-->
-  <!--change action_page.php to desired php script-->
-  <form action="connect.php" method = "POST">
-    <!--collect full name-->
-    <label for="fullname">Full Name</label> <br>
-    <input type="text" placeholder="Enter Name" id="fullname" name="fullname" required> <br>
-    
-    <!--collect user email-->
-    <!--users email is the username-->
-    <label for="email">Email</label> <br>
-    <input type="text" placeholder="Enter Email" id="email" name="email" required>
-    <br>
-    <!--collect user psw-->
-    <label for="psw">Password</label> <br>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    <!--repeat psw-->
-    <label for="psw-repeat">Repeat Password</label> <br>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <!--two br for spacing-->
-    <br>
-    <br>
-    <!--submit btn-->
-    <button type="submit">Sign Up</button>
+  <div class="container-fluid main-page-container">
+    <h1>Sign Up</h1>
+    <hr>
+      <div class="container signup-form">
+      <!--Simple form for sign up data-->
+      <!--change action_page.php to desired php script-->
+      <form action="connect.php" method = "POST">
+      <!--collect full name-->
+      <label for="fullname">Full Name</label> 
+        <br>
+      <input type="text" placeholder="Enter Name" id="fullname" name="fullname" required>   
+        <br>
+      <label for="email">Email</label> <br>
+      <input type="text" placeholder="Enter Email" id="email" name="email" required>
+        <br>
+      <label for="psw">Password</label> 
+        <br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+      <label for="psw-repeat">Repeat Password</label> 
+        <br>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <!--two br for spacing-->
+        <br>
+        <br>
+      <button class="btn btn-danger">Cancel</button>
+      <button class="btn btn-primary" type="submit">Sign Up</button>
   </form>
 </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
